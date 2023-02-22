@@ -69,3 +69,20 @@ function numbers (a, b) {
 
 numbers (oneNum, twoNum)
 
+// Вибачте, але тут зовсім не розумію як зробити, щоб введена задача в промпт textUser відобразилась як значення цього ключа, і як перевіряти, чи є вже цей користувач, щоб змінити статус
+let nameUser = prompt('Enter name', 'Your name');
+let textUser = prompt('Enter text', 'Your text');
+const tasks = {
+    Anna: {
+      status: 'new',
+      text: 'Create checkout page'
+    }, 
+    Ihor: {
+      status: 'done',
+      text: 'Add styles to header'
+    },
+    [nameUser]: {
+        status: 'new',
+        [textUser]:
+    }
+}
